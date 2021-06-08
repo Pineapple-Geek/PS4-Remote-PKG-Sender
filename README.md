@@ -6,14 +6,15 @@ I incorporated the fact of changing the design very easily by editing the config
 
 all you have to do is simply with any text editor, open the file to change the value of theme to enter the name of the theme folder that you will have placed in the theme folder.
 
-`Path of JSON file`
+`Path of JSON file:`
 
     ` \resources\app\config.json`
 
-`Path of Theme folder`
+`Path of Theme folder:`
 
     ` \resources\app\theme`
 
+`What the config.json file contains:`
 ```json
 {
    "theme":"dark"
@@ -30,14 +31,15 @@ j'ai incorporer le fait de changer de design trés facilement en éditant le fic
 
 il vous suffit tout simplement avec n'importe quel éditeur de texte, d'ouvrir le fichier pour changer la valeur de theme pour renseigner le nom du dossier du théme que vous aurier placer dans le dossier theme.
 
-`Chemin du fichier JSON`
+`Chemin du fichier JSON:`
 
     ` \resources\app\config.json`
 
-`Chemin du dossier de Thème`
+`Chemin du dossier de Thème:`
 
     ` \resources\app\theme`
 
+`Ce que contien le fichier config.json :`
 ```json
 {
    "theme":"dark"
