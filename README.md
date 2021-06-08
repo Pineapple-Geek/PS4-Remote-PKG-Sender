@@ -50,26 +50,26 @@ j'ai aussi corriger le problème avec les torrent qui charger des fois des fichi
 
 ## README of [iref-use](https://github.com/iref-use/ps4-remote-pkg-sender) PS4 Remote PKG Sender
 
-PS4 REMOTE PKG SENDER based on Electron + Express + WebTorrent
+PS4 REMOTE PKG SENDER based on Electron + Express + WebTorrent&nbsp;
 
-DO NOT CLOSE THE APPLICATION BEFORE THE TASK(S) ON PS4 IS NOT COMPLETED
+DO NOT CLOSE THE APPLICATION BEFORE THE TASK(S) ON PS4 IS NOT COMPLETED&nbsp;
 
-PS4:
-start HEN V1.8
-start flatz's Remote installer PKG
+PS4:&nbsp;
+start HEN V1.8&nbsp;
+start flatz's Remote installer PKG&nbsp;
 
-PC:
-start the ps4remotepkgsender.exe
-select your local PC IP address
-insert IP from your PS4
-choose the PKG from your PC
-click to SEND button
+PC:&nbsp;
+start the ps4remotepkgsender.exe&nbsp;
+select your local PC IP address&nbsp;
+insert IP from your PS4&nbsp;
+choose the PKG from your PC&nbsp;
+click to SEND button&nbsp;
 
-PC + WebTorrent:
-start the ps4remotepkgsender.exe
-select your local PC IP address
-insert IP from your PS4
-paste Magnet Link to magnet link input
-click to START TORRENT SERVER AND SEND button
+PC + WebTorrent:&nbsp;
+start the ps4remotepkgsender.exe&nbsp;
+select your local PC IP address&nbsp;
+insert IP from your PS4&nbsp;
+paste Magnet Link to magnet link input&nbsp;
+click to START TORRENT SERVER AND SEND button&nbsp;
 
 Credits: Thanks to flatz, Specter, xvortex
