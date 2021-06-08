@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PS4 Remote PKG Sender</title>
+    <link href="./style.css" rel="stylesheet"> 
+    <link id="LinkCSS" href="*" rel="stylesheet">
+    <script src="./jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+  	<div class="DIVParametre" style="">
+    <label>LOCAL IP:</label>
+    <select id="localIP">
+    </select>
+    <label>PORT: </label>
+    <input type="text" id="portNumber" value="2121">
+    <input type="button" id="changePort" value="CHANGE PORT"/>
+    <br><br>
+    <label>PS4 IP:</label>
+    <input type="text" placeholder="192.168.1.100" value="192.168.1.100" id="PS4IP" />
+    </div>
+    <br><br>
+    <div class="DIVPKGSend">
+    <label>PKG Files:</label>
+    <div class="files"></div>
+    <input type="file" id="filePicker" multiple accept=".pkg" />
+    <br>
+    <input type="button" value="SEND" id="send" disabled />
+    </div>
+    <div class="DIVPKGTorrent">
+    <label>Torrent magnet link</label>
+    <input type="text" id="magnetLink" /><br>
+    <label> PORT: </label>
+    <input type="text" id="torrentPortNumber" value="80">
+    <br>
+    <input type="button" value="START TORRENT SERVER AND SEND" id="sendTorrent" />
+    </div>
+    <br><br>
+    <div class="DIVTaskLogs">
+    <label>Tasks:</label>
+    <div class="tasks"></div>
+    <br><br>
+    <label>Log:</label><br>
+    <textarea id="log" rows="12" cols="86" style="overflow:auto;resize:none"></textarea>
+    </div>
+
+    <div id="ModalPKG" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h3>Liste des fichiers PKG trouver dans le MagnetLink : </h3>
+        <div class="MaListe">
+                <ul id="listpkg"></ul>
+        </div>
+        <input type="button" value="VALIDER" class="BtnValider" id="Valider" />
+      </div>
+
+    </div>
+
+    <div id="ModalTheme" class="modaltheme">
+
+      <!-- Modal content -->
+      <div class="modal-content-theme">
+        <h3>Inscrire le nom du thème : </h3>
+	    <input type="text" id="ThemeTXT" value="" required>
+	    <input type="button" value="VALIDER" class="BtnValiderTheme" id="ValiderTheme" />
+      </div>
+
+    </div>
+
+    <script>
+	function loadtheme(fileLocation) {
+	    $.getJSON(fileLocation, function( data ) {
+		    document.getElementById("LinkCSS").href = "./theme/" + data.theme + "/style.css";
+		});
+	}
+
+   	window.onload = function() {
+   		var newURL = "./config.json";
+	    loadtheme(newURL);
+	}; 
+
+    function Uplist(id) {
+        const words = id.split('-');
+        var thispkglist = words[0] + words[1];
+        var nextpkglist = words[0] + (parseInt(words[1]) - 1);
+
+        var thispkglisttext = document.getElementById(thispkglist).innerHTML;
+        var nextpkglisttext = document.getElementById(nextpkglist).innerHTML;
+
+        document.getElementById(thispkglist).innerHTML = nextpkglisttext;
+        document.getElementById(nextpkglist).innerHTML = thispkglisttext;
+    }
+
+    function Downlist(id) {
+        const words = id.split('-');
+        var thispkglist = words[0] + words[1];
+        var nextpkglist = words[0] + (parseInt(words[1]) + 1);
+
+        var thispkglisttext = document.getElementById(thispkglist).innerHTML;
+        var nextpkglisttext = document.getElementById(nextpkglist).innerHTML;
+
+        document.getElementById(thispkglist).innerHTML = nextpkglisttext;
+        document.getElementById(nextpkglist).innerHTML = thispkglisttext;
+    }
+
+    </script>
+
+    <script>
+      window.$ = window.jQuery = require('jquery');
+    </script>
+
+    <script>
+      window.WebTorrent = require('webtorrent');
+    </script>
+
+    <script> 
+    	window.$ = window.jQuery = require('./jquery-3.6.0.min.js') 
+	</script>
+
+    <script>
+      require('./renderer.js');
+    </script>
+
+  </body>
+</html>

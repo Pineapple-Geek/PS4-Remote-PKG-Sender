@@ -1,0 +1,48 @@
+/* Theme de la page principale */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.DIVParametre{
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+.DIVPKGSend{
+  width: 350px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: white;
+}
+.DIVPKGTorrent{
+  width: 350px;
+  margin-left: 410px;
+  margin-top: -86px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: white;
+}
+.DIVTaskLogs{
+  border-style: solid;
+  border-color: grey;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: white;
+}

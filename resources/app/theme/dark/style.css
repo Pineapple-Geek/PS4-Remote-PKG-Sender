@@ -1,0 +1,115 @@
+/* Theme de la page principale */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.DIVParametre{
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border-style: solid;
+  border-color: #e78a3f;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #777777;
+}
+.DIVPKGSend{
+  width: 350px;
+  border-style: solid;
+  border-color: #82e73f;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: #777777;
+}
+.DIVPKGTorrent{
+  width: 350px;
+  margin-left: 410px;
+  margin-top: -86px;
+  border-style: solid;
+  border-color: #3fe782;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: #777777;
+}
+.DIVTaskLogs{
+  border-style: solid;
+  border-color: #8a3fe7;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: #777777;
+}
+
+/* Theme de la page modal */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #888;
+  width:80%;
+  height:60% !important;
+}
+
+.PKG{
+  margin: 0 !important;
+}
+
+.BtnValider {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 5px;
+  padding: 5px 5px;
+  float: right;
+}
+
+/* Theme de la liste des pkg */
+.MaListe{
+  margin:0;
+  font-style:normal;
+  width:80%;
+  height:78%;
+  position:relative;
+}
+
+.MaListe ul{
+  margin:0;
+  padding:0;  
+  list-style:none;
+  position:relative;
+}
+
+.MaListe li{
+  font-size:0.9em;
+  position:relative;
+  text-shadow:none;
+  clear:both;      
+}
+
+.MaListe li input{
+  margin-left: 10px;
+}
