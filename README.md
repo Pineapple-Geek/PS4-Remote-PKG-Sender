@@ -1,4 +1,4 @@
-# PS4-Remote-PKG-Sender
+# PS4 Remote PKG Sender
 ## English
 Remastering of the software created by [iref-use](https://github.com/iref-use/ps4-remote-pkg-sender).
 
@@ -48,7 +48,7 @@ il vous suffit tout simplement avec n'importe quel éditeur de texte, d'ouvrir l
 
 j'ai aussi corriger le problème avec les torrent qui charger des fois des fichier qui n'était pas des fichier pkg.
 
-## README of [iref-use](https://github.com/iref-use/ps4-remote-pkg-sender) PS4-Remote-PKG-Sender
+## README of [iref-use](https://github.com/iref-use/ps4-remote-pkg-sender) PS4 Remote PKG Sender
 
 PS4 REMOTE PKG SENDER based on Electron + Express + WebTorrent
 
