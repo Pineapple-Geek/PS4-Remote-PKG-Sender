@@ -1,4 +1,7 @@
 # PS4 Remote PKG Sender
+
+![Screenshot](Screenshot.jpg)
+
 ## English
 Remastering of the software created by [iref-use](https://github.com/iref-use/ps4-remote-pkg-sender).
 
